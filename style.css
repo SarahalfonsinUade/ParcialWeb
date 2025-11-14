@@ -25,15 +25,8 @@ h6 {
 }
 
 body.dark{
-    --primary-color: #121212;
-    --secondary-color: #bb86fc;
-    --tertiary-color: #03dac6;
-    --quaternary-color: #1f1f1f;
-    --card-background: #1e1e1e;
-    --text-color-secondary: #ffffff;
-    --text-color: #ffffff;
-    --text-color-tertiary: #bb86fcb7;
-   
+background: black;
+color: white;
 }
 body {
     margin: 0;
@@ -47,6 +40,7 @@ body {
     color: var(--text-color-secondary);
     padding: 20px 20px;
 }
+
 .header-content {
     display: flex;
     justify-content: space-between;

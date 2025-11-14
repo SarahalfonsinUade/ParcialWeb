@@ -1,32 +1,23 @@
-document.querySelector('#darkModeButton').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
+document.querySelector('#darkModeToggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark');
 });
 
 
-const contactForm = document.getElementById('contactoForm');
+    const contactForm = document.getElementById('contactoForm');
 
-contactForm.addEventListener('submit', (event) => {
-            event.preventDefault(); 
+   contactForm.addEventListener('submit', (e) => {
+                e.preventDefault(); 
 
             const nombreCompletoInput = document.getElementById('nombreCompleto');
             const emailContactoInput = document.getElementById('emailContacto');
-            const comentariosTextarea = document.getElementById('comentarios');
-
+            const comentariosTextarea = document.getElementById('comentario');
             const validateInput = (inputElement) => {
-                if (inputElement.value.trim() === '') {
-                    return false;
-                } else {
-                    return true;
-                }
+               return inputElement.value.trim() !== '';
             };
 
             const validateEmail = (inputElement) => {
                 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailPattern.test(inputElement.value.trim())) {
-                    return false;
-                } else {
-                    return true;
-                }
+                return emailPattern.test(inputElement.value.trim());
             };
 
             const isNombreValid = validateInput(nombreCompletoInput);
