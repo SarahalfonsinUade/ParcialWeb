@@ -24,6 +24,7 @@ document.querySelector('#darkModeToggle').addEventListener('click', function() {
             const isEmailValid = validateInput(emailContactoInput) && validateEmail(emailContactoInput);
             const isComentariosValid = validateInput(comentariosTextarea);
 
+            let isValid = true;
             if (!isNombreValid || !isEmailValid || !isComentariosValid) {
                 isValid = false;
             }
