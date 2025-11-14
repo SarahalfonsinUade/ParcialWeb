@@ -186,4 +186,9 @@ align-items: center;
         gap: 20px;
         text-align: center;
     }
+    .contacto-form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
