@@ -36,7 +36,7 @@ document.querySelector('#darkModeToggle').addEventListener('click', function() {
                 comentariosTextarea.value = '';
 
             } else {
-                alert('Por favor, completa todos los campos correctamente.');
+                alert("completa todos los campos");
             }
         });
 
